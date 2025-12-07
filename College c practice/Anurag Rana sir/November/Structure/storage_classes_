@@ -1,0 +1,26 @@
+In c programming storage class is used to define scope, lifetime of variables, functions and default initial value. At the time of declarations in c, we define both datatype and storage classes of variable and function.
+
+
+four storage class : 
+
+1. Automatic variables(Auto): The auto storage class is the default for all local variables and functions. there is no need to write auto in front of any declaration.
+    storage: It stored in memory(RAM).
+    scope: these variables are accessible in declared block/ Local to the function body they are defined in.
+    Lifetime: there lifetime depend on how long the control remain inside the block.
+    Default value: Garbage value(a random value)
+
+2. register: storage: the register variable in CPU register instead of memory and it gaves high performance but we cannot store variables frequently in register it is not guarantee that all declared variable stored in register.Register variable has no memory location. Generally this is done for the variables which are being used frequently.
+    scope: Local to the function they are declared in.
+    Default value: Garbage value
+    Lifetime: They are available till the end of the function block, in which the variable is defined.
+
+3. Static: it stored in memory using data segment instead of stack. as the variable declared it remain with programme till the end rather the creating and destroying the variables.
+A static variable remains under existence for use within the function for entire program run. It is recommended to minimize the use of unnecessary static variables in program.
+    scope: Local to the block they are defined in.
+    Default value: 0
+    Lifetime: They are available throughout the lifetime of the program.
+
+4. External variables(Extern): It is also known as the external storage class this class is used to divide the  c programme in small  c programme. They are same as global variables. It is recommended to minimize the use of unnecessary global variables in a program. It perform as a link between two or more files. the extern variables remain with programme till the end.
+    scope: Global to the programme they are defined in
+    Default value: 0
+    Lifetime: These variables are declared outside any function. They are available throughout the lifetime of the program.

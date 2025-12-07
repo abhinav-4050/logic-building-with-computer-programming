@@ -1,0 +1,3 @@
+Two types of memory allocation : 
+1. Compile time : Static/ stack
+2. Runtime : Dynamic/ Heap
